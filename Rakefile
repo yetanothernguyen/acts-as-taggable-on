@@ -45,11 +45,11 @@ end
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
-    gemspec.name = "acts-as-taggable-on"
+    gemspec.name = "yetanothernguyen-acts-as-taggable-on"
     gemspec.summary = "ActsAsTaggableOn is a tagging plugin for Rails that provides multiple tagging contexts on a single model."
-    gemspec.description = "With ActsAsTaggableOn, you could tag a single model on several contexts, such as skills, interests, and awards. It also provides other advanced functionality."
+    gemspec.description = "With ActsAsTaggableOn, you could tag a single model on several contexts, such as skills, interests, and awards. It also provides other advanced functionality. This fork changes behavior of tagged_with on empty tag list. It will return an empty scope instead of an empty hash."
     gemspec.email = "michael@intridea.com"
-    gemspec.homepage = "http://github.com/mbleigh/acts-as-taggable-on"
+    gemspec.homepage = "http://github.com/yetanothernguyen/acts-as-taggable-on"
     gemspec.authors = ["Michael Bleigh"]
     gemspec.files =  FileList["[A-Z]*", "{generators,lib,spec,rails}/**/*"] - FileList["**/*.log"]
   end
